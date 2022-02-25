@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/categories"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/restaurants"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_restaurants"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/show_all_8"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/light_red"
+                        android:textAllCaps="false"
+                        android:textStyle="normal"
+                        android:background="@drawable/show_all_background"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

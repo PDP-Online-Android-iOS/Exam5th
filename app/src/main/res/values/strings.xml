@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Exam5th</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+
+    <string name="first_title">Saved Listings</string>
+    <string name="first_info">Save your favorite listings to come to them later</string>
+
+    <string name="second_title">Add New Listings</string>
+    <string name="second_info">Add new Listings directly from the app, including photo gallery and filters</string>
+
+    <string name="third_title">Chat</string>
+    <string name="third_info">Communicate with your customers and vendors in real-time</string>
+
+    <string name="forth_title">Get Notified</string>
+    <string name="forth_info">Stay on top of your game with real-time push notifications</string>
+
+
+    <string name="home">Home</string>
+    <string name="collections">Collections</string>
+    <string name="saved">Saved</string>
+    <string name="search">Search</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories">Categories</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="show_all_8">Show all (8)</string>
+    <string name="pizza_restaurant">Pizza Restaurant</string>
+    <string name="_1231_filmore_str">1231 Filmore Str</string>
+    <string name="message">Message</string>
+    <string name="hotels">Hotels</string>
+    <string name="ogabekdev">OgabekDev</string>
+    <string name="assalomu_alaykum_yordamiz_kerak_edi">Salom. Yordamiz kerak edi • 12:02</string>
+
+</resources>

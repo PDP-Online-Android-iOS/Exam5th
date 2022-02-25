@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/restaurant_photo"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/restaurant_pizza"/>
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pizza_restaurant"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"/>
+
+    <TextView
+        android:id="@+id/restaurant_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1231_filmore_str"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="#90000000"
+        android:textAllCaps="false"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="3dp"/>
+
+    <RatingBar
+        android:id="@+id/restaurant_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_marginTop="-5dp"
+        android:scaleX=".4"
+        android:rating="3.5"
+        android:scaleY=".4"
+        android:progressTint="@color/light_red"
+        android:progressBackgroundTint="#90000000"
+        android:transformPivotX="5dp"
+        android:transformPivotY="10dp"
+        android:max="5"/>
+
+</LinearLayout>

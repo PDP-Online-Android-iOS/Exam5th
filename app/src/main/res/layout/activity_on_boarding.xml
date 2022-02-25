@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OnBoardingActivity"
+    android:background="@color/light_red"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_onboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="NestedWeights"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start">
+            <TextView
+                android:id="@+id/tv_skip_onboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:text="@string/skip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/di_onboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="@color/white"
+                app:dotsStrokeColor="#90000000"
+                app:dotsSize="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end">
+
+            <TextView
+                android:id="@+id/tv_next_onboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:text="@string/next"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
